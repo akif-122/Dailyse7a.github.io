@@ -1,0 +1,200 @@
+
+@media screen and (max-width: 991px){
+
+.navbar-toggler{
+	border: none;
+	outline: none !important;
+}
+.navbar-toggler span{
+	color: #fff;
+	font-size: 24px;
+}
+
+/*
+============================================
+	NAVBAR SECTION START
+============================================
+*/
+.navbar-section{
+	padding: 0px 40px;
+	background: #54c0e2;
+	position: relative;
+}
+.navbar-section #myNav{
+	margin-right: 0px;
+	position: relative;
+}
+.navbar-section #myNav ul li a{
+	display: block;
+	text-align: center;
+	border-bottom: 1px solid lightgrey;
+
+
+}
+
+.navbar-section #myNav .dropdownMenu{
+	position: relative;
+	width: 100%;
+
+
+
+}
+.navbar-section #myNav .dropDown:hover .dropdownMenu{
+	display: block;
+}
+.navbar-section #myNav .dropdownMenu a{
+	display: block;
+	border-bottom: 1px solid lightgrey;
+	font-size: 13px !important;
+	transition: all 0.3s linear;
+
+}
+.navbar-section #myNav .dropdownMenu a:hover{
+	color: #00244d !important;
+
+}
+/*
+============================================
+	NAVBAR SECTION END
+============================================
+*/
+
+
+}
+
+@media screen and (max-width: 767px){
+
+.section-title h2{
+	font-size: 24px;
+}
+/*
+============================================
+	TOP BAR SECTION START
+============================================
+*/
+
+.topBar h5{
+
+	margin-right: 0px;
+}
+/*
+============================================
+	TOP BAR SECTION END
+============================================
+*/
+/*
+============================================
+	JOIN SECTION SECTION START
+============================================
+*/
+.join-section{
+	padding: 40px 30px;
+}
+
+
+.join-section .join-text h1{
+	font-size: 26px;
+}
+.join-section .join-text p{
+	font-size: 13px;
+
+}
+
+
+/*
+============================================
+	JOIN SECTION SECTION END
+============================================
+*/
+.most-read-form .card-body{
+
+	margin-right: 10px;
+}
+
+}
+
+
+
+@media screen and (max-width: 575px){
+/*
+============================================
+	NAVBAR SECTION START
+============================================
+*/
+.navbar-section{
+	padding: 0px 10px;
+
+}
+/*
+============================================
+	NAVBAR SECTION END
+============================================
+*/
+.section-title h2{
+	font-size: 22px;
+}
+
+/*
+============================================
+	MEDICAL DEPARTMENT SECTION START
+============================================
+*/
+.medical-section{
+	padding: 40px 0;
+	margin: 50px 0;
+	background: #f4f4f4;
+
+}
+.medical-section .medical-text h3{
+	font-size: 22px;
+	font-weight: bold;
+	margin: 20px 0;
+
+
+}
+.medical-section .medical-text p{
+	font-size: 14px;
+}
+/*
+============================================
+	MEDICAL DEPARTMENT SECTION END
+============================================
+*/
+
+
+
+.answer-post{
+	padding: 15px;
+}
+
+/*
+============================================
+	JOIN SECTION SECTION START
+============================================
+*/
+.join-section{
+	padding: 40px 15px;
+}
+
+
+.join-section .join-text h1{
+	font-size: 24px;
+}
+.join-section .join-form{
+	padding: 25px;
+}
+
+/*
+============================================
+	JOIN SECTION SECTION END
+============================================
+*/
+.health-section .health-container .health-content{
+	padding: 25px;
+}
+.health-section .health-container .health-content p{
+	font-size: 13px;
+}
+
+
+}

@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: Poppins;
+}
+a{
+	text-decoration: none !important;
+}
+.wrapper{
+	overflow: hidden;
+}
+
+/*
+============================================
+	TOP BAR SECTION START
+============================================
+*/
+.topBar{
+	background: #1e73be;
+	padding: 10px;
+}
+.topBar h5{
+	font-size: 14px;
+	color: #fff;
+	margin-right: 50px;
+}
+.line{
+	position: relative;
+}
+.line:after{
+	content: '' ;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.4s linear;
+	z-index: 100;
+}
+.line:before{
+	content: '' ;
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	background: #fff;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.4s linear;
+	z-index: 100;
+}
+.line:hover:after{
+	width: 20px;
+	opacity: 1;
+
+}
+.line:hover:before{
+	height: 20px;
+	opacity: 1;
+
+}
+/*
+============================================
+	TOP BAR SECTION END
+============================================
+*/
+
+/*
+============================================
+	NAVBAR SECTION START
+============================================
+*/
+.navbar-section{
+	padding: 0px 40px;
+	background: #54c0e2;
+	position: relative;
+}
+.navbar-section #myNav{
+	margin-right: 30px;
+	position: relative;
+}
+.navbar-section #myNav ul li a{
+	padding: 15px 10px;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 500;
+	position: relative;
+
+}
+.navbar-section #myNav ul li a span{
+	position: relative;
+	transition: all 0.3s linear;
+
+}
+.navbar-section #myNav ul li a span:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	left: 0;
+	top: 50%;
+	opacity: 0;
+	transition: all 0.3s linear;
+
+
+}
+.navbar-section #myNav ul li:hover .main-link{
+	color: #00244d;
+}
+.navbar-section #myNav ul li:hover a span:after{
+	top: 110%;
+	opacity: 1;
+}
+.navbar-section #myNav .dropDown{
+	position: relative !important;
+}
+.navbar-section #myNav .dropdownMenu{
+	position: absolute;
+	top: 150%;
+	left: 0;
+	background: #54c0e2;
+	width: 200px;
+	box-shadow: 0 0 10px -5px grey;
+	display: none;
+	z-index: 10;
+
+
+}
+.navbar-section #myNav .dropDown:hover .dropdownMenu{
+	display: block;
+}
+.navbar-section #myNav .dropdownMenu a{
+	display: block;
+	border-bottom: 1px solid lightgrey;
+	font-size: 13px !important;
+	transition: all 0.3s linear;
+
+}
+.navbar-section #myNav .dropdownMenu a:hover{
+	color: #00244d !important;
+
+}
+/*
+============================================
+	NAVBAR SECTION END
+============================================
+*/
+
+
+/*
+============================================
+	 MOST READ SECTION START
+============================================
+*/
+.most-read{
+	margin: 30px 0;
+}
+.most-read .section-heading h5{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.most-read-post .card-body{
+	border: 1px solid #54c0e2;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.most-read-post .card-body .most-read-img{
+	height: 200px;
+	overflow: hidden;
+
+}
+.most-read-post .card-body .most-read-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.3s linear;
+}
+
+.most-read-post .card-body:hover img{
+	transform: scale(1.2);
+}
+
+
+.most-read-post .card-body .most-read-content{
+	padding: 10px;
+}
+.most-read-post .card-body .most-read-content h6{
+	font-size: 14px;
+	font-weight: 600;
+	margin: 5px 0;
+	color: #54c0e2;
+	transition: all 0.3s linear;
+
+}
+.most-read-post .card-body .most-read-content h6:hover{
+	color: #fec8e2;
+}
+.most-read-post .card-body .most-read-content p{
+	color: #54c0e2;
+	font-size: 12px;
+	font-weight: 500;
+	margin: 5px 0;
+	margin-bottom: 20px;
+
+}
+
+.most-read-form .card-body{
+	border-radius: 20px;
+	background: #54c0e2;
+	padding: 30px;
+	margin-right: 20px;
+}
+.most-read-form .card-body input{
+	height: 35px;
+	border-radius: 0;
+	text-align: right;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 25px 0;
+}
+.most-read-form .card-body .q-btn button{
+	font-size: 12px;
+	font-weight: 600;
+	text-align: center;
+	padding: 10px 40px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	background: #add8e6;
+}
+.most-read-form .card-body .q-btn button:hover{
+	background: #fec8e2;
+}
+
+/*
+============================================
+	 MOST READ SECTION END
+============================================
+*/
+
+
+/*
+============================================
+	MEDICAL DEPARTMENT SECTION START
+============================================
+*/
+.medical-section{
+	padding: 40px 0;
+	margin: 50px 0;
+	background: #f4f4f4;
+
+}
+.medical-section .medical-text h3{
+	font-size: 28px;
+	font-weight: bold;
+	margin: 20px 0;
+	color: #000072;
+}
+.medical-section .medical-text p{
+	font-size: 15px;
+	font-weight: 500;
+	margin: 20px 0;
+	color: grey;
+}
+
+.deparment-container .department{
+	width: 100%;
+	background: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	transition:all 0.3s linear;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.deparment-container .department:hover{
+	background: #54c0e2;
+}
+.deparment-container .department:hover p{
+	color: #fff;
+}
+.deparment-container .department .dprmt-img img{
+	max-width: 100px;
+}
+.deparment-container .department p{
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px;
+	color: #00244d;
+	transition:all 0.3s linear;
+
+
+}
+/*
+============================================
+	MEDICAL DEPARTMENT SECTION END
+============================================
+*/
+
+/*
+============================================
+	ANSWER SECTION START
+============================================
+*/
+
+.section-title{
+	margin: 10px 0;
+	margin-bottom: 30px;
+}
+.section-title h2{
+	font-size: 28px;
+	color: #54c0e2;
+	font-weight: bold;
+	text-align: right;
+}
+.answer-section{
+	margin: 50px 0;
+}
+
+.answer-post{
+	border: 1px solid  #00244d;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 3px lightgrey;
+	background: #fff;
+	padding: 30px;
+}
+.answer-post-time .ans-message{
+	margin-right: 30px;
+}
+.answer-post-time .ans-message span{
+	font-size: 13px;
+	font-weight: 600;
+	color: #00244d;
+}
+.answer-post-time .answer-post-date a{
+	font-size: 13px;
+	font-weight: 600;
+	color: #00244d;
+
+}
+.ans-post-content{
+	margin-top: 20px;
+}
+.ans-post-content h4{
+	font-size: 15px;
+	margin: 10px 0;
+	margin-bottom: 30px;
+	font-weight: bold;
+	color: #54c0e2;
+}
+.ans-post-content p{
+	font-size: 13px;
+	font-weight: 600;
+	color: grey;
+	line-height: 1.8;
+}
+
+.ans-post-btn {
+	margin: 20px 0;
+}
+.ans-post-btn a{
+	color: #fff;
+	font-weight: 600;
+	font-size: 13px;
+	padding: 10px 40px;
+	border-radius: 5px;
+	background: #54c0e2;
+	transition: all 0.3s linear;
+}
+.ans-post-btn a:hover{
+	color: #00244d;
+	background: #ffc4e2;
+}
+/*
+============================================
+	ANSWER SECTION END
+============================================
+*/
+
+/*
+============================================
+	HEALTH TOPIC SECTION START
+============================================
+*/
+
+.health-section{
+	margin: 40px 0;
+}
+
+.health-section .health-container{
+	border-radius: 10px;
+	overflow: hidden;
+	background: #f5f5f5;
+	margin: 20px 0;
+}
+
+.health-section .health-container .health-img{
+	height: 250px;
+	overflow: hidden;
+}
+.health-section .health-container:hover img{
+	transform: scale(1.2);
+}
+.health-section .health-container .health-img  img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.3s linear;
+
+}
+.health-section .health-container .health-content{
+	padding: 40px;
+}
+.health-section .health-container .health-content h4{
+	font-size: 16px;
+	margin: 10px 0;
+	margin-bottom: 30px;
+	font-weight: bold;
+	color: #54c0e2;
+}
+.health-section .health-container .health-content p{
+	font-size: 13px;
+	font-weight: 600;
+	color: grey;
+	line-height: 1.8;
+}
+
+.health-section .health-container .health-content .health-btn {
+	margin: 30px 0;
+}
+.health-section .health-container .health-content .health-btn a{
+	color: #fff;
+	font-weight: 600;
+	font-size: 13px;
+	padding: 10px 40px;
+	border-radius: 5px;
+	background: #54c0e2;
+	transition: all 0.3s linear;
+}
+.health-section .health-container .health-content .health-btn a:hover{
+	color: #00244d;
+	background: #ffc4e2;
+}
+.health-section .health-container .health-content .health-tags i{
+	font-size: 16px;
+	color: #54c0e2;
+	
+}
+.health-section .health-container .health-content .health-tags a{
+	font-size: 12px;
+	color: #54c0e2;
+	font-weight: 500;
+	text-decoration: none;
+}
+/*
+============================================
+	HEALTH TOPIC SECTION END
+============================================
+*/
+
+/*
+============================================
+	SUB POST SECTION START
+============================================
+*/
+.sub-post{
+	margin: 50px 0;
+}
+
+.sub-post .sub-post-content{
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 50%);
+	border: 1px solid #A7A7A7;
+
+}
+.sub-post .sub-post-content:hover .subpost-img img{
+	opacity: 0.9;
+	transform: rotate(3deg) scale(1.02);
+}
+.sub-post .sub-post-content .subpost-img img{
+	width: 120px;
+	transition: all 0.2s linear;
+
+}
+.sub-post .sub-post-content h4{
+	font-size: 13px;
+	font-weight: 600;
+	color: #54c0e2;
+	margin-right: 20px;
+}
+/*
+============================================
+	SUB POST SECTION END
+============================================
+*/
+
+/*
+============================================
+	JOIN SECTION SECTION START
+============================================
+*/
+.join-section{
+	margin: 50px 0;
+	padding: 40px 30px;
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../img/join-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.join-section .join-text{
+	margin: 20px 0;
+}
+.join-section .join-text h1{
+	font-size: 32px;
+	font-weight:600;
+	color: #fff;
+	margin: 20px 0;
+}
+.join-section .join-text p{
+	font-size: 14px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.join-section .join-form{
+	border-radius: 10px;
+	background: rgba(255,255,255,0.5);
+	padding: 40px;
+}
+.join-section .join-form input{
+	height: 40px;
+	width: 100%;
+	text-align: right;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 10px;
+	outline: none;
+	margin: 5px 0;
+	border: 1px solid transparent;
+}
+.join-section .join-form input:focus{
+	border-color: grey;
+}
+.join-section .join-form .join-btn{
+	margin-top: 30px;
+}
+.join-section .join-form .join-btn button{
+	color: #00244d;
+	background: lightblue;
+	border: none;
+	font-size: 13px;
+	font-weight: bold;
+	border-radius: 5px;
+	outline: none;
+	padding: 14px 50px;
+	transition: all 0.3s linear;
+}
+.join-section .join-form .join-btn button:hover{
+	background: #ffc4e2;
+}
+
+/*
+============================================
+	JOIN SECTION SECTION END
+============================================
+*/
+
+/*
+============================================
+	FOOTER SECTION START
+============================================
+*/
+.footer-section{
+	padding: 30px;
+	border-top: 1px solid #3333;
+
+}
+
+.footer-section .footer-about img{
+	width: 100px;
+
+}
+.footer-section .footer-about h4{
+	font-size: 17px;
+	margin: 20px;
+	font-weight: bold;
+	color: #54c0e2;
+}
+.footer-section .footer-about p{
+	font-size: 12px;
+	font-weight: bold;
+	color: grey;
+}
+.footer-section .footer-about .sub-section{
+	margin: 10px 0;
+}
+.footer-section .footer-about .sub-section input{
+	width: 100%;
+	height: 40px;
+	font-size: 14px;
+	padding: 10px;
+	font-weight: bold;
+	color: grey;
+	text-align: right;
+	margin-bottom: 10px;
+
+
+}
+.footer-section .footer-about .sub-section button{
+	padding: 10px 40px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #00244d;
+	background: #54c0e2;
+	border-radius: 5px;
+	border: none;
+	transition: all 0.3s linear;
+}
+.footer-section .footer-about .sub-section button:hover{
+
+	background: #ffc4e2;
+}
+
+.footer-section h3{
+	font-size: 18px;
+	font-weight: bold;
+	color: #54c0e2;
+	margin: 10px 0;
+}
+.footer-section ul li a{
+	color: #00244d;
+	margin: 10px 0;
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+	transition: all 0.3s linear;
+}
+.footer-section ul li a:hover{
+	color: #54c0e2;
+}
+
+.ft-social{
+	margin-top: 20px;
+}
+.ft-social li a i{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	color: #fff;
+}
+.ft-social li:nth-child(1) a i{
+	background: #d62977;
+}
+.ft-social li:nth-child(1) a i:hover{
+	background: #da3e84;
+}
+
+.ft-social li:nth-child(2) a i{
+	background: #3b5998;
+
+}
+.ft-social li:nth-child(2) a i:hover{
+	background: #4e69a2;
+}
+.btm-link{
+	font-size: 14px;
+}
+.btm-link li{
+	margin: 5px;
+}
+/*
+============================================
+	FOOTER SECTION END
+============================================
+*/
